@@ -1,0 +1,41 @@
+<div class="container">
+    <header class='header'>
+        <h1>Minhas tarefas</h1>
+        <button [ngStyle]="{'background-color': showAdd ? 'red' : 'green'}" class='btn' (click)="onAdd()">{{ text }}</button>
+    </header>
+    
+    <div *ngIf="showAdd">
+        <form class="add-form" [formGroup]="formTask" (ngSubmit)="onSubmit()">
+            <div class="form-control">
+                <label for="tarefa">Tarefa</label>
+                <input type='text' placeholder='Nova Tarefa' 
+                name="tarefa" formControlName="tarefa"  />
+            </div>
+            <div class="form-control">
+                <label for="data">Data</label>
+                <input type="text" placeholder='Data'
+                name="data" formControlName="data" />
+            </div>
+            <div class="form-control form-control-check">
+                <label for="reminder">Novo lembrete</label>
+                <input type='checkbox' name="reminder" formControlName="reminder" />
+            </div>
+
+            <input type='submit' value='Salvar' class="btn btn-block" />
+        </form>
+    </div>
+
+    <div *ngIf="tasks.length > 0" >
+        <div *ngFor="let task of tasks">
+            <div [ngClass]="task?.reminder ? 'task-reminder' : 'task'" (dblclick)="toggleReminder(task.id)">
+                <h3>{{task?.tarefa}}</h3>
+                <p>{{task?.data}}</p>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="tasks.length === 0">
+        <p>Você não possui nenhuma tarefa!</p>
+    </div>
+
+</div>

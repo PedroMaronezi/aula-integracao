@@ -1,0 +1,23 @@
+<div class="container">
+    <header class='header'>
+        <h1>Login</h1>
+    </header>
+    
+    <div>
+        <form class="add-form" [formGroup]="formLogin" (ngSubmit)="onSubmit()">
+            <div class="form-control">
+                <label for="ract">RACF</label>
+                <input type='text' placeholder='RACF' 
+                name="racf" formControlName="racf"  />
+            </div>
+            <div class="form-control">
+                <label for="senha">Senha</label>
+                <input type="password" placeholder='Senha'
+                name="senha" formControlName="senha" />
+            </div>
+
+            <input type='submit' value='Salvar' class="btn btn-block" />
+        </form>
+    </div>
+
+</div>

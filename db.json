@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "tarefa": "Meeting at School",
+      "data": "Feb 6th at 1:30pm",
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "tarefa": "RR",
+      "data": "23/03 às 11h",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "tarefa": "Teste",
+      "data": "Hoje",
+      "reminder": true
+    }
+  ]
+}
