@@ -25,3 +25,15 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## References
+https://angular.io/guide/http
+https://www.youtube.com/watch?v=185uAxYz1dU
+https://angular.io/guide/observables
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing
+https://www.bezkoder.com/angular-12-jwt-auth/
+https://blog.angular-university.io/angular-jwt-authentication/
+https://medium.com/tableless/entendendo-tokens-jwt-json-web-token-413c6d1397f6
+https://en.wikipedia.org/wiki/Security_token_service
+https://docs.oracle.com/cd/E65459_01/dev.1112/e65461/content/authn_sts_client.html#:~:text=An%20STS%20is%20a%20third,an%20STS%20using%20WS%2DTrust.
+https://medium.com/tableless/entendendo-tokens-jwt-json-web-token-413c6d1397f6
